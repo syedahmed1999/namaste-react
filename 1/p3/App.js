@@ -1,9 +1,39 @@
 /**
+ * Nested Elements
+ *
+ */
+
+const parent = React.createElement(
+  "div",
+  { id: "parent" },
+  React.createElement(
+    "div",
+    { id: "child" },
+    React.createElement("h1", {}, "I am h1 tag")
+  )
+);
+
+/**
+ * Siblings
+ */
+
+const siblings = React.createElement(
+  "div",
+  { id: "parent" },
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", {}, "I am h1 tag"),
+    React.createElement("h2", {}, "I am h2 tag"),
+  ])
+);
+
+/**
  * create element takes 3 parameters
  * tag
  * object
  *      -attributes to tag
  * content (inner html)
+ *
+ * this is an object
  */
 const heading = React.createElement(
   "h1",
@@ -11,10 +41,13 @@ const heading = React.createElement(
   "Hello world seperation"
 );
 
+console.log(heading);
 /**
  * create root is a DOM method
  * takes the node of html as a paramter
  */
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(heading);
+console.log(root);
+// root.render(heading);
+// root.render(parent);
+root.render(siblings);
