@@ -4,7 +4,8 @@
   "description": "This is a package json for every episode",
   "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "npx parcel ./2/index.html"
   },
   "keywords": [
     "react",
