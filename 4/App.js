@@ -40,13 +40,19 @@ const Body = () => {
     <div className="body">
       <div className="search-bar">Search</div>
       <div className="res-container">
-        <ResturantCard />
+        <ResturantCard name='KFC' cuisines="biryani"/>
+        <ResturantCard name='BFC' cuisines="Pizza"/>
+        <ResturantCard name='AFC' cuisines="burgers"/>
+        <ResturantCard name='MAC' cuisines="Pizza, burgers, biryani"/>
+        <ResturantCard name='LALAL' cuisines="Pizza, burgers, biryani"/>
+        <ResturantCard name='NICE' cuisines="Pizza, burgers, biryani"/>
+        <ResturantCard name='FOOD' cuisines="Pizza, burgers, biryani"/>
       </div>
     </div>
   );
 };
 
-const ResturantCard = () => {
+const ResturantCard = (props) => {
   return (
     <div className="res-card">
       <img
@@ -54,8 +60,8 @@ const ResturantCard = () => {
         alt="res-logo"
         src="https://images.deliveryhero.io/image/fd-pk/LH/u4tn-listing.jpg?width=400&height=292"
       />
-      <h3 className="res-name">Broadway Pizza</h3>
-      <h4 className="res-cuisines">Pizza, burgers, biryani</h4>
+      <h3 className="res-name">{props.name ?? "Broadway Pizza"}</h3>
+      <h4 className="res-cuisines">{props.cuisines ?? "Pizza, burgers, biryani"}</h4>
       <h4 className="res-start">4.6 stars</h4>
       <h4 className="res-wait">10 minutes</h4>
     </div>
