@@ -17,3 +17,18 @@
   font-size: 24px;
   cursor: pointer;
 }
+
+.res-card{
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.search-bar{
+  padding: 10px;
+}
+
+.res-logo{
+  width: 100%;
+}
