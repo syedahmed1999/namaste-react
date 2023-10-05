@@ -62,7 +62,7 @@ const ResturantCard = (props) => {
       />
       <h3 className="res-name">{props.name ?? "Broadway Pizza"}</h3>
       <h4 className="res-cuisines">{props.cuisines ?? "Pizza, burgers, biryani"}</h4>
-      <h4 className="res-start">4.6 stars</h4>
+      <h4 className="res-start">4.6 stars</h4> 
       <h4 className="res-wait">10 minutes</h4>
     </div>
   );
@@ -72,3 +72,5 @@ const ResturantCard = (props) => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />);
+
+// 1:35:00
