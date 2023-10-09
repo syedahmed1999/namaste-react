@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import React from 'react'
 
-const Counter = () => {
+export const App = () => {
   const [count, setCount] = useState(0);
   console.log(count)
   return (
@@ -16,20 +16,6 @@ const Counter = () => {
 
     </div>
   )
-
-}
-
-
-export const App = () => {
-  const array = [1, 2, 3, 4, 5];
-  return <div>
-
-    {
-      array.map((x, i) => {
-        return <Counter key={i} />
-      })
-    }
-  </div>
 }
 
 
