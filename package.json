@@ -5,7 +5,7 @@
   "main": "App.js",
   "scripts": {
     "test": "jest",
-    "start": "npx parcel ./4/index.html"
+    "start": "npx parcel ./counter/index.html"
   },
   "keywords": [
     "react",
